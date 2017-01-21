@@ -1,9 +1,61 @@
 // Initialize app
 var myApp = new Framework7();
 
+var options = {
+  'bgcolor': '#0da6ec',
+  'fontcolor': '#fff'
+}
+
+var $$ = Dom7;
+
+//Initialize & options
+
+
 
 // If we need to use custom DOM library, let's save it to $$ variable:
-var $$ = Dom7;
+
+
+//Define slides
+var welcomescreen_slides = [
+  {
+    id: 'slide0',
+    picture: '<div class="tutorialicon">♥</div>',
+    text: 'Welcome to this tutorial. In the <a class="tutorial-next-link" href="#">next steps</a> we will guide you through a manual that will teach you how to use this app.'
+  },
+  {
+    id: 'slide1',
+    picture: '<div class="tutorialicon">✲</div>',
+    text: 'This is slide 2'
+  },
+  {
+    id: 'slide2',
+    picture: '<div class="tutorialicon">♫</div>',
+    text: 'This is slide 3'
+  },
+  {
+    id: 'slide3',
+    picture: '<div class="tutorialicon">☆</div>',
+    text: 'Thanks for reading! Enjoy this app or go to <a class="tutorial-previous-slide" href="#">previous slide</a>.<br><br><a class="tutorial-close-btn" href="#">End Tutorial</a>'
+  }
+];
+
+var welcomescreen = myApp.welcomescreen(welcomescreen_slides, options);
+
+$$(document).on('click', '.tutorial-close-btn', function () {
+  welcomescreen.close();
+});
+
+$$('.tutorial-open-btn').click(function () {
+  welcomescreen.open();
+});
+
+$$(document).on('click', '.tutorial-next-link', function (e) {
+  welcomescreen.next();
+});
+
+$$(document).on('click', '.tutorial-previous-slide', function (e) {
+  welcomescreen.previous();
+});
 
 // Add view
 var mainView = myApp.addView('.view-main', {
