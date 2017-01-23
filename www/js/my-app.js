@@ -68,6 +68,41 @@ $$(document).on('deviceready', function() {
     console.log("Device is ready!");
 });
 
+// $$(document).on('click', '.item-link', function (e) {
+//   console.log("this is kiran");
+//   var formData={'userId':'nareshmangalagiri@gmail.com','password':'1234','enable':'true'};
+//   $$.ajax({
+//     url: 'http://139.59.3.231:8080/SpringWithHibernate/validateLogin.do/',
+//     data: formData,
+//     method: "POST",
+//     dataType: 'json',
+//     contentType: 'application/json',
+//     success: function(data) {
+//       console.log(data);
+//     },
+//     complete: function(xhr, status){
+//       console.log(status);
+//     }
+//   })
+// });
+
+// var formData={"userId":"nareshmangalagiri@gmail.com","password":"1234","enable":"true"};
+
+// self.post = function (params)
+//      {
+//        var deferred = $q.defer();
+//        var config = {
+//          headers: { 'Content-type': 'application/json' },
+//          'dataType': 'json'
+//        };
+//
+//        $http.post(self.url, params, config).success(function (data) {
+//          deferred.resolve(data);
+//        }).error(function (data) {
+//          deferred.reject(data);
+//        });
+//        return deferred.promise;
+//      };
 
 // Now we need to run the code that will be executed only for About page.
 
@@ -91,5 +126,5 @@ $$(document).on('pageInit', function (e) {
 // Option 2. Using live 'pageInit' event handlers for each page
 $$(document).on('pageInit', '.page[data-page="about"]', function (e) {
     // Following code will be executed for page with data-page attribute equal to "about"
-    myApp.alert('Here comes About page');
+    // myApp.alert('Here comes About page');
 })
