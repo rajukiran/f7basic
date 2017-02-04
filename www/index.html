@@ -29,7 +29,7 @@
 
     <link rel="stylesheet" href="lib/framework7/css/framework7.ios.min.css">
     <link rel="stylesheet" href="lib/framework7/css/framework7.ios.colors.min.css">
-    <link rel="stylesheet" href="css/welcomescreen.css">
+    <link rel="stylesheet" href="css/framework7-icons.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
@@ -42,8 +42,7 @@
     <!-- Left panel with reveal effect-->
     <div class="panel panel-left panel-reveal">
         <div class="content-block">
-            <p>Left panel content goes here</p>
-            <a href="index.html">Logout</a>
+            <div style="background-image:url(http://www.planwallpaper.com/static/images/518164-backgrounds.jpg)" valign="bottom" class="card-header color-white no-border">Journey To Mountains</div>
         </div>
     </div>
 
@@ -55,13 +54,13 @@
             <div class="navbar">
                 <div class="navbar-inner">
                     <!-- We need cool sliding animation on title element, so we have additional "sliding" class -->
-                    <div class="center sliding">RealMilk Progress</div>
+                    <div class="center sliding">Awesome App</div>
                     <div class="right">
                         <!--
                           Right link contains only icon - additional "icon-only" class
                           Additional "open-panel" class tells app to open panel when we click on this link
                         -->
-                        <!-- <a href="#" class="link icon-only open-panel"><i class="icon icon-bars"></i></a> -->
+                        <a href="#" class="link icon-only open-panel"><i class="icon icon-bars"></i></a>
                     </div>
                 </div>
             </div>
@@ -72,13 +71,44 @@
                     <!-- Scrollable page content -->
                     <div class="page-content">
                         <div class="content-block">
-                            <!-- <p>Page content goes here</p> -->
+                            <p>Welcome to brand new App</p>
                             <!-- Link to another page -->
-                            <!-- <a href="about.html">About app</a>
-                            <a href="login.html">Open Login Screen</a> -->
+                            <a href="about.html">About app</a>
+                            <i class="f7-icons">alarm</i>
+                            <a href="form.html">Form elements</a>
+                            <div class="card facebook-card">
+                            <div class="card-header no-border">
+                              <div class="facebook-avatar"><img src="https://developers.google.com/safe-browsing/images/SafeBrowsing_Icon.png" width="34" height="34"></div>
+                              <div class="facebook-name">John Doe</div>
+                              <div class="facebook-date">Monday at 3:47 PM</div>
+                            </div>
+                            <div class="card-content"><img src="http://lh3.googleusercontent.com/jN9tX6dCJ6_XL9E4K1KCO2Tuwe9_rYUbwv723eu6XGI0PWGLcPs0259VscOu249PPKKcU5AOXrq6JnleEaoK6K_JvZ2PY9lw3pMApzOpTQ=s660" width="100%"></div>
+                            <div class="card-footer no-border">
+                              <a href="#" class="link">Like</a>
+                              <a href="#" class="link">Comment</a>
+                              <a href="#" class="link">Share</a>
+                            </div>
+                          </div>
 
-                            <!-- <p><a href="#" class="tutorial-open-btn button">Open Welcome Screen</a></p> -->
-                            <a href="login.html" class="button">Realmilk Login</a>
+                          <div class="card facebook-card">
+                            <div class="card-header">
+                              <div class="facebook-avatar"><img src="https://developers.google.com/safe-browsing/images/SafeBrowsing_Icon.png" width="34" height="34"></div>
+                              <div class="facebook-name">John Doe</div>
+                              <div class="facebook-date">Monday at 2:15 PM</div>
+                            </div>
+                            <div class="card-content">
+                              <div class="card-content-inner">
+                                <p>What a nice photo i took yesterday!</p>
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/5/5a/Google_Assistant_logo.png" width="100%">
+                                <p class="color-gray">Likes: 112    Comments: 43</p>
+                              </div>
+                            </div>
+                            <div class="card-footer">
+                              <a href="#" class="link">Like</a>
+                              <a href="#" class="link">Comment</a>
+                              <a href="#" class="link">Share</a>
+                            </div>
+                          </div>
                         </div>
                     </div>
                 </div>
@@ -88,15 +118,15 @@
                 <div class="toolbar-inner">
                     <!-- Toolbar links -->
                     <a href="#" class="link">Link 1</a>
+                    <a href="#" class="back link"><i class="f7-icons">home</i></a>
                     <a href="#" class="link">Link 2</a>
                 </div>
             </div>
         </div>
     </div>
 
-    <script type="text/javascript" src="cordova.js"></script>
+    <!-- <script type="text/javascript" src="cordova.js"></script> -->
     <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
-    <script type="text/javascript" src="js/welcomescreen.js"></script>
     <script type="text/javascript" src="js/my-app.js"></script>
 </body>
 
